@@ -1,0 +1,386 @@
+/* css reset  */
+*{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+}
+
+
+
+/* Navbar */
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: rgb(95, 116, 143);
+    height: 80px;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* navbar logo & img */
+#logo{
+margin: 10px 34px;
+}
+#logo img{
+height: 80px;
+margin: 10px;
+}
+
+/* navbar list  */
+#navbar  ul{
+display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 15px;
+    margin: 5px 5px;
+}
+#navbar ul li a{
+    display: block;
+    background: none;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 3px 20px;
+}
+#li1 a:hover{
+    background-color: rgb(207, 61, 61);
+    box-shadow: 3px 3px 4px rgb(143, 141, 141);
+     cursor: pointer;
+}
+#li2 a:hover{
+    background-color: rgb(48, 48, 155);;
+    box-shadow: 3px 3px 4px rgb(143, 141, 141);
+     cursor: pointer;
+}
+#li3 a:hover{
+    background-color: rgb(35, 122, 35);
+    box-shadow: 3px 3px 4px rgb(143, 141, 141);
+     cursor: pointer;
+}
+#li4 a:hover{
+    background-color: rgb(155, 100, 155);
+    box-shadow: 3px 3px 4px rgb(143, 141, 141);
+     cursor: pointer;
+}
+
+/* home section */
+#home{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    margin-top: 50px;
+    padding: auto;
+    margin-bottom: 20px;
+    /* border: 2px solid black; */
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(bankbackground.jpg) no-repeat center center/cover;
+    height: 110%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#home h1{
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#home p.center{
+    color: black;
+}
+
+/* Services Section */
+#services{    
+    /* border: 2px solid green; */
+    margin-top: 70px;
+    display: flex;   
+}
+#services .box{
+    /* border: 2px solid yellow; */
+    box-shadow: 5px 5px 3px rgb(139, 139, 139);
+    padding: 10px;
+    margin: 0px 20px 0px 20px;
+    text-align: center;
+    border-radius: 18px;
+}
+
+#services .center{
+    font-size: 1.1rem;
+    color: rgb(151, 23, 23);
+}
+
+#boxone{
+    background-color: rgb(248, 228, 228);
+    margin: auto;    
+}
+#boxone:hover{
+    background-color: rgb(223, 189, 189);
+    cursor: pointer;
+}
+
+#boxtwo{
+    background-color: rgb(191, 252, 191);
+    margin: auto;
+}
+#boxtwo:hover{
+    background-color:rgb(135, 189, 135) ;
+    cursor: pointer;
+}    
+#boxthree{
+    background-color:rgb(191, 191, 230) ;
+    margin: auto;
+}
+#boxthree:hover{
+    background-color:rgb(132, 132, 184) ;
+    cursor: pointer;
+}
+
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    width: 150px;
+    
+}
+
+#customers{ 
+    /* border: 2px solid blue; */
+    align-items: center;
+    text-align: center;
+}
+#customers h1{
+    text-align: center;
+    border: 2px solid green;
+    box-shadow: 3px 3px 3px gray;
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding: 5px;
+    border-radius: 18px;
+    background: rgb(217, 247, 217);
+
+}
+#customers table{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    background: white;
+} 
+
+th{
+    background-color: rgb(238, 238, 98);
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+td{
+    align-items: center;
+    text-align: center;
+    padding: 5px 50px 5px 50px;
+}
+table{
+    margin:auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    /* border-collapse: collapse; */
+}
+#customers button{
+    margin: auto;
+    height: 25px;
+    width: 70px;
+    background-color: rgb(194, 103, 103);
+    color: white;
+    border-radius: 10px;
+    padding: 2px;
+}
+#customers button:hover{
+    /* color: white; */
+    background-color: rgb(226, 95, 95);
+    cursor: pointer;
+}
+
+#transactions{
+    margin-top: 60px;
+    height: 100%;
+}
+#transactions::before{
+    background: url(transaction.jpg) no-repeat center center/cover;
+}
+.t-table{
+    margin-top: 0px;
+}
+#transactions h1{
+    border: 2px solid purple;
+    background-color: rgb(235, 192, 235);
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 18px;
+}
+
+/* footer */
+footer{
+    color: white;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    padding: 6px;
+    height: 18px;
+    margin-top:100px;
+}
+
+#transfer{
+    /* display: block; */
+    align-items: center;
+}
+#transfer h1{
+    border: 2px solid rgb(4, 196, 196);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px gray;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 8px;
+    width: 50%;
+    text-align: center;
+}
+#transfer div.main{
+    margin: 50px 50px 50px 50px 50pxs;
+    padding: 50px;
+    margin: auto;
+    height: 300px;
+    width: 800px;
+    background-color: rgb(253, 253, 180);
+    align-items: center;
+    text-align: center;
+    border: 2px solid red;
+    display: block;
+}
+.sr{
+    margin-left: 100px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    padding: auto;
+    width: 600px;
+    display: flex;
+    /* border: 2px solid black; */
+}
+select{
+    border: 1px solid gray;
+    border-radius: 5px;
+    /* text-align: center; */
+    color: black;
+    padding: 5px;
+    padding: auto;
+}
+h2.amount{
+    margin-top: 50px;
+    /* padding: 8px; */
+}
+#transfer input{
+    border: 1px solid gray;
+    border-radius: 6px;
+    height: 30px;
+}
+
+#transfer button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    margin-top: 50px;
+    color: white;
+    background-color: rgb(187, 59, 59);
+}
+#transfer button:hover{
+    background-color:rgb(131, 39, 39) ;
+    cursor: pointer;
+}
+
+#success div{
+    margin-top: 100px;
+    margin-left: 500px;
+    /* margin: auto; */
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+#success h1{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(2, 211, 2);
+}
+#success button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    border: 1px solid rgb(190, 189, 189);
+    margin-top: 50px;
+    color: black;
+    background-color: rgb(226, 225, 225);
+}
+#success button:hover{
+    background-color:rgb(126, 122, 122) ;
+    cursor: pointer;
+}
+
+#contact{
+    height: 572px;
+}
+#contact::before{
+    background: url(contact.jpg) no-repeat center center/cover;
+    height: 100%;
+}
+#contact div{
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 300px;
+    box-shadow: 5px 5px 5px gray;
+    background-color: rgb(193, 226, 193);
+    height: 250px;
+    width: 500px;
+}
+#contact h3{
+    margin: 40px;
+}
